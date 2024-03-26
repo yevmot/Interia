@@ -1,4 +1,4 @@
-.burger {
+.mobile-nav-btn {
     display: none;
     position: relative;
     z-index: 50;
@@ -8,7 +8,7 @@
     height: 20px;
 }
 
-.burger span {
+.mobile-nav-btn span {
     height: 2px;
     width: 100%;
     border-radius: 30px;
@@ -16,8 +16,8 @@
     background-color: #fff;
 }
 
-.burger::before,
-.burger::after {
+.mobile-nav-btn::before,
+.mobile-nav-btn::after {
     content: '';
     position: absolute;
     height: 2px;
@@ -27,23 +27,23 @@
     transition: all 0.3s ease 0s;
 }
 
-.burger::before {
+.mobile-nav-btn::before {
     top: 0;
 }
-.burger::after {
+.mobile-nav-btn::after {
     bottom: 0;
 }
 
-.burger.active span {
+.mobile-nav-btn .active span {
     transform: scale(0);
 }
 
-.burger.active::before {
+.mobile-nav-btn .active::before {
     top: 50%;
     transform: rotate(-45deg) translate(0, -50%);
 }
 
-.burger.active::after {
+.mobile-nav-btn .active::after {
     bottom: 50%;
     transform: rotate(45deg) translate(0, 50%);
 }

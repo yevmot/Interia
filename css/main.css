@@ -1,6 +1,8 @@
 @import url('reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Nunito&display=swap');
 @import url('burger.css');
+@import url('mobile-nav.css');
+
 main {display: none;}
 footer {display: none;}
 body {
