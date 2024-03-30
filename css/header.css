@@ -1,0 +1,74 @@
+.header {
+    height: 689px;
+    background-color: #191d1d;
+    background-image: url('./../img/BG.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.header .title {
+    padding: 0;
+}
+.logo img {
+    transition: transform 0.3s ease;
+}
+.logo:hover img {
+    transform: scale(1.1);
+}
+
+/*______________________________ NAVIGATION ______________________________*/
+               
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+.nav-list__item {
+    display: inline-block;
+
+    font-family: "Nunito";
+    font-size: 16px;
+    padding: 0 0 0 42px;
+
+    transition: background-color 0.3s ease;
+}
+.nav-list__link {
+    display: inline-block; 
+    transition: transform 0.3s ease;
+}
+.nav-list__link:hover {
+    transform: scale(1.1);
+}
+.nav-list__link--active {
+    text-shadow: 0 0 10px #fff;
+}
+.header-btn {
+    margin-left: 85px;
+}
+
+/*______________________________ CONTENT ______________________________*/
+
+.header__content {
+    display: flex;
+    height: 600px;
+}
+.header__content__left {
+    width: 50%;
+}
+.swipe {
+    font-family: "Nunito";
+    font-size: 16px;
+    letter-spacing: 7px;
+    padding-bottom: 370px;
+
+    writing-mode: vertical-lr; /* Устанавливаем вертикальный режим написания снизу вверх */
+    transform: rotate(-180deg); /* Поворачиваем текст на 90 градусов влево для коррекции направления */
+}
+.header__content__right {
+    width: 50%;
+    margin-top: 180px;
+}

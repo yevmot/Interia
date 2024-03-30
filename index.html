@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interia</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/media.css">
-    <script src="mobile-nav.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
 </head>
 
 <body>
@@ -16,24 +15,27 @@
                 <a class="logo" href="#">
                     <img src="./img/LOGO.svg" alt="Interia">
                 </a>
+                
+                <div class="fade"></div>
+                
                 <ul class="nav-list">
-                    <li class="nav-list_item">
-                        <a href="#" class="nav-list__link">home</a>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link nav-list__link--active">home</a>
                     </li>
-                    <li class="nav-list_item">
+                    <li class="nav-list__item">
                         <a href="#" class="nav-list__link">pages</a>
                     </li>
-                    <li class="nav-list_item">
+                    <li class="nav-list__item">
                         <a href="#" class="nav-list__link">services</a>
                     </li>
-                    <li class="nav-list_item">
+                    <li class="nav-list__item">
                         <a href="#" class="nav-list__link">team</a>
                     </li>
-                    <li class="nav-list_item">
+                    <li class="nav-list__item">
                         <a href="#" class="nav-list__link">blog</a>
                     </li>
                     
-                    <a href="#" class="button header__button">GET STARTED</a>
+                    <a href="#" class="button header-btn">GET STARTED</a>
                 </ul>
 
                 <div class="mobile-nav-btn">
@@ -41,9 +43,10 @@
                 </div>
             </nav>
 
+
             <div class="header__content">
                 <div class="header__content__left">
-                    <p1 class="swipe">SWIPE DOWN</p1>
+                    <p class="swipe">SWIPE DOWN</p>
                 </div>
 
                 <div class="header__content__right">
@@ -52,28 +55,10 @@
                 </div>
             </div>
         </div>
+
+        <div class="mobile-nav-fade"></div>
     </header>
 
-    <div class="mobile-nav-fade"></div>
-    <div class="mobile-nav">
-        <ul class="mobile-nav__list">
-            <li class="mobile-nav-list__item">
-                <a href="#" class="mobile-nav-list__link">home</a>
-            </li>
-            <li class="mobile-nav-list__item">
-                <a href="#" class="mobile-nav-list__link">pages</a>
-            </li>
-            <li class="mobile-nav-list__item">
-                <a href="#" class="mobile-nav-list__link">services</a>
-            </li>
-            <li class="mobile-nav-list__item">
-                <a href="#" class="mobile-nav-list__link">team</a>
-            </li>
-            <li class="mobile-nav-list__item">
-                <a href="#" class="mobile-nav-list__link">blog</a>
-            </li>
-        </ul>
-    </div>
 
     <main>
         <section class="about container">
@@ -83,6 +68,7 @@
                     <h1 class="title">We are the best interior design studio in london</h1>
                     <p class="description">Posuere urna nec tincidunt praesent. Egestas maecenas pharetra convallis posuere. Ipsum nunc aliquet bibendum enim. Sem integer vitae justo eget magna fermentum iaculis eu non.</p>
                 </div>
+
                 <div class="about__learn">
                     <div class="learn__left about__learn">
                         <img src="./img/about/IMG1.jpg" alt="img1">
@@ -96,15 +82,15 @@
                         <div class="right_down">
                             <div class="virtues">
                                 <h2 class="virtues__title">2K+</h2>
-                                <p2 class="virtues_description">PROJECTS DONE</p2>
+                                <p class="virtues_description">PROJECTS DONE</p>
                             </div>
                             <div class="virtues">
                                 <h2 class="virtues__title">20+</h2>
-                                <p2 class="virtues_description">PRO TEAMS</p2>
+                                <p class="virtues_description">PRO TEAMS</p>
                             </div>
                             <div class="virtues">
                                 <h2 class="virtues__title">300+</h2>
-                                <p2 class="virtues_description">GLOBAL CLIENTS</p2>
+                                <p class="virtues_description">GLOBAL CLIENTS</p>
                             </div>
                         </div>
                     </div>
@@ -261,7 +247,6 @@
                 </section>
             </div>
         </section>
-
     </main> 
 
     <footer class="footer">
@@ -314,6 +299,7 @@
                 <p class="description">Posuere urna nec tincidunt praesent egestas maecenas pharetra convallis posuere ipsum nunc.</p>
             </div>
         </div>
+
         <div class="footer-bottom">
             <div class="container">
                 <div class="copyright">© Copyright by AltDesain-Studio – All right reserved.</div>
@@ -324,5 +310,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/mobile-nav.js" type="text/javascript"></script>
 </body>
 </html>

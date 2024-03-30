@@ -1,10 +1,11 @@
 @import url('reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Nunito&display=swap');
-@import url('burger.css');
-@import url('mobile-nav.css');
+@import url('header.css');
+@import url('footer.css');
 
-main {display: none;}
-footer {display: none;}
+@import url('burger.css');
+
+main {display: none;} footer {display: none;}
 body {
     font-family: "Kanit", "Nunito", sans-serif;
     font-weight: 400;
@@ -13,17 +14,14 @@ body {
     color: #fff;
     background-color: #191d1d;
 }
-
 body a {
     color: #fff;
 }
-
 .container {
     position: relative;
-    margin: 0 auto; /* центрирую контейнер */
-    max-width: 1140px; /* задаю ширину контейнера */
+    margin: 0 auto;
+    max-width: 1140px;
 }
-
 .button {
     font-family: "Kanit";
     font-size: 16px;
@@ -34,20 +32,21 @@ body a {
     border-radius: 30px;
     padding: 13px 32px;
     
+    transition: all 0.3s;
     cursor: pointer; 
 }
-
+.button:hover {
+    box-shadow: inset 0 0 25px #ffffff17;
+}
 .title {
     font-family: "Kanit";
     font-size: 40px;
-    padding: 0px 0px 15px;
+    padding: 0 0 15px;
 }
-
 .description {
     font-family: 'Nunito';
     font-size: 16px;
 }
-
 span {
     font-family: Kanit;
     font-size: 16px;
@@ -55,94 +54,23 @@ span {
     color: #6D7D7D;
 }
 
-
-/*______________________________ HEADER ______________________________*/
-
-.header {
-    height: 689px;
-    background-color: #191d1d;
-    background-image: url('./../img/BG.jpg');
-    background-size: cover;
-    background-position: center center;
-}
-
-.header .title {
-    padding: 0px;
-}
-
-
-/*______________________________ NAVIGATION ______________________________*/
-               
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 32px;
-}
-
-.nav-list {
-    display: flex;
-    align-items: center;
-}
-
-.nav-list_item {
-    font-family: "Nunito";
-    font-size: 16px;
-    padding: 0 0 0 42px;
-}
-
-
-.header__button {
-    margin-left: 85px;
-}
-/*______________________________ CONTENT ______________________________*/
-
-.header__content {
-    display: flex;
-    height: 600px;
-}
-
-.header__content__left {
-    width: 50%;
-}
-
-.swipe {
-    font-family: "Nunito";
-    font-size: 16px;
-    letter-spacing: 7px;
-    padding-bottom: 370px;
-
-    writing-mode: vertical-lr; /* Устанавливаем вертикальный режим написания снизу вверх */
-    transform: rotate(-180deg); /* Поворачиваем текст на 90 градусов влево для коррекции направления */
-}
-
-.header__content__right {
-    width: 50%;
-    margin-top: 180px;
-}
-
-
 /*______________________________ MAIN ______________________________*/
 
 /*_______ ABOUT _______*/
-
 .about {
     padding: 100px 0 250px;
 }
-
 .column {
     display: block;
 }
 .about__description {
     padding: 0 0 75px;
 }
-
 .about__description p {
     max-width: 513px;
 }
 
 /*_______ LEARN _______*/
-
 .about__learn {
     display: flex;
 }
@@ -157,20 +85,16 @@ span {
     display: flex;
     align-items: end;
 }
-
 .right__top img {
     border-radius: 0 50px 0 0;
 }
-
 .about__button {
     margin-left: 115px;
 }
-
 .right_down {
     display: flex;
     justify-content: space-between;
 }
-
 .virtues__title {
     margin: 55px 70px 23px 40px;
     
@@ -178,7 +102,6 @@ span {
     font-size: 40px;
     color: #6D7D7D;
 }
-
 .virtues_description {
     display: flex;
     max-width: 48px;
@@ -192,26 +115,23 @@ span {
 }
 
 /*___________________________ HIRE ___________________________*/
-
 .hire {
     position: absolute;
     height: 318px;
-    top: -418px; /* Размещаем секцию вверху */
+    top: -418px;
     
     background-color: #212828;
     border-radius: 50px 50px 0px 50px;
     
     overflow: hidden;
-    z-index: 1; /* Устанавливаем z-index, чтобы секция находилась выше других */
+    z-index: 1; 
 }
-
 .hire__img img {
     position: relative;
     right: 50px;
     bottom: 50px;
     border-radius: 0 50% 50% 0;
 }
-
 .hire-us {
     max-width: 519px;
     margin: 61px 109px 0px 0px;
@@ -224,7 +144,6 @@ span {
 }
 
 /*___________________________ TEAMS ___________________________*/
-
 .teams {
     position: relative; 
     z-index: 2;
@@ -240,29 +159,24 @@ span {
 .teams__description {
     max-width: 440px;
 }
-
 .teams__learn {
     display: flex;
     flex-wrap: wrap;
     width: 570px;
     height: 570px;
-    gap: 22px; /* Промежуток между фотографиями */
+    gap: 22px;
 }
-
 .teams_button {
     margin: 111px 27px 111px 0;
 }
-
 .teams__learn .learn--item:nth-of-type(3) {
-    border-radius: 0 0 50px /* Устанавливаем радиус закругления углов */
+    border-radius: 0 0 50px;
 }
-
 .teams__logo {
     display: flex;
     justify-content: space-between;
     margin-top: 75px;
 }
-
 .reviews {
     position: absolute;
     margin-top: 74px;
@@ -271,31 +185,26 @@ span {
     position: relative;
     padding-bottom: 74px;
 }
-
 .avatar img {
     position: absolute;
     z-index: 1;
     left: 0;
 }
-
 .avatar img:nth-child(2) {
     position: absolute;
     z-index: 2;
     left: 13%;
 }
-
 .avatar img:nth-child(3) {
     position: absolute;
     z-index: 3;
     left: 26%;
 }
-
 .avatar img:nth-child(4) {
     position: absolute;
     z-index: 4;
     left: 40%;
 }
-
 .ava {
     border: 3px solid #131616;
     border-radius: 50px;
@@ -310,43 +219,42 @@ span {
 }
 
 /*___________________________ design ___________________________*/
-
 .design {
     margin: 100px 0 100px;
 }
-
 .line {
     width: 100%;
     height: 1px; 
     background-color: #212828; 
     margin: 47px 0 47px; 
 }
-
 .design__info {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .design__description {
     display: block;
     max-width: 412px;
     color: #6D7D7D ;
 }
-
 .design__description .description {
     padding-bottom: 22px;
 }
-
 .more {
     font-family: "Kanit";
     font-size: 16px;
     color: #fff;
     letter-spacing: 7px;
+
+    display: inline-block; 
+    transition: transform 0.3s ease; /* Добавляем анимацию */
+}
+.more:hover {
+    transform: scale(1.1);
 }
 
 /*___________________________ divider-img ___________________________*/
-
 .divider-img {
     display: flex;
     justify-content: center;
@@ -355,7 +263,6 @@ span {
 }
 
 /*___________________________ BLOG ___________________________*/
-
 .blog {
     margin: 100px 0 100px;
     display: block;
@@ -363,36 +270,28 @@ span {
 .article {
     text-align: center;
 }
-
 .blog .row {
     margin-bottom: 0;
 }
-
 .info {
     margin-top: 20px;
 }
-
 .info .photo {
     margin: 25px 0 25px 0;
 }
-
 .info__description {
     max-width: 326px;
     margin: 0 auto;
-
 }
-
 .info .description {
     margin: 15px 0 35px;
     color: #6D7D7D ;
 }
-
 .blog .line {
     margin: 100px 0 75px;
 }
 
 /*___________________________ subscribe ___________________________*/
-
 .subscribe {
     display: flex;
     justify-content: space-between;
@@ -415,90 +314,9 @@ span {
     padding: 0 0 0 27px;
     border-bottom: 1px solid #6D7D7D;
 }
-
 input::placeholder {
-    color: #fff; /* Устанавливаем цвет текста placeholder */
+    color: #fff; 
 }
-
 .subscribe .button {
     margin-left: 24px;
-}
-
-/*__________________________________ footer __________________________________*/
-
-.footer {
-    background-color: #131616;
-}
-
-.footer .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 127px;
-}
-
-.nav-list_item {
-    padding: 0 55px 0 0;
-}
-
-.footer .line {
-    margin: 70px 0 70px;
-}
-
-.nav-media {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 158px;
-}
-
-.media-list {
-    display: flex;
-    column-gap: 20px;
-}
-
-.nav-media__link img{
-    width: 14px;
-    height: 14px;
-}
-
-.nav-media__link {
-    display: flex;
-    align-items: center;
-    border: 1px solid #6D7D7D;
-    border-radius: 50%;
-    padding: 12px 12px;
-}
-
-.nav-media .description {
-    max-width: 479px;
-    text-align: end;
-}
-
-.footer-bottom {
-    padding: 50px 0px 50px 0px;
-    background-color: #191d1d;
-}
-.footer-bottom .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.copyright {
-    font-family: "Nunito";
-    font-size: 16px;
-    color: #fff
-}
-.terms-privacy {
-    width: 273px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.terms-privacy a {
-    font-family: "Kanit";
-    font-size: 16px;
-    letter-spacing: 7px;
-    color: #6D7D7D;
 }

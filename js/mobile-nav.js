@@ -1,18 +1,13 @@
+const navList = document.querySelector('.nav-list');
 const navBtn = document.querySelector('.mobile-nav-btn');
-const nav = document.querySelector('.mobile-nav');
-const menuIcon = document.querySelector('.nav-icon');
-const fade = document.querySelector('.mobile-nave-fade');
+const fade = document.querySelector('.fade');
 
-navBtn.onclick = function () {
-    nav.classList.toggle('mobile-nav--open');
-    fade.classList.toggle('mobile-nav-fade--open');
-    menuIcon.classList.toggle('nav-icon--active');
-    document.body.classList.toggle('no-scroll');
-};
+const body = document.body;
 
-fade.onclick = function () {
-    nav.classList.toggle('mobile-nav--open');
-    fade.classList.toggle('mobile-nav-fade--open');
-    menuIcon.classList.toggle('nav-icon--active');
-    document.body.classList.toggle('no-scroll');
+if (navList && navBtn) {
+    navBtn.addEventListener('click', () => {
+        navList.classList.toggle('open')
+        navBtn.classList.toggle('active')
+        fade.classList.toggle('active')
+    })
 }

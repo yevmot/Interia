@@ -18,11 +18,46 @@
 /* Portrait tablets and small desktops */
 @media (max-width: 991px) {
     .nav-list {
+        position: absolute;
+        right: -100%;
+        top: 0;
+        background-color: #191d1d;
+        display: block;
+        
+        padding: 75px 130px 0 30px;
+        height: 100%;
+        transition: all 0.8s;
+        z-index: 99;
+    } 
+    .nav-list.open {
+        right: 0;
+    }
+    .nav-list__item {
+        display: block;
+        padding: 15px 0 15px 0;
+    }
+    .header-btn {
         display: none;
     }
-
     .mobile-nav-btn {
         display: flex;
+    }
+    .fade {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0;
+        transition: opacity 0.8s ease;
+        z-index: 99;
+    }
+
+    .fade.active {
+        display: block;
+        opacity: 0.4;
     }
 
     .header__content__right {
