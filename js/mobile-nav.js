@@ -9,5 +9,6 @@ if (navList && navBtn) {
         navList.classList.toggle('open')
         navBtn.classList.toggle('active')
         fade.classList.toggle('active')
+        document.body.classList.toggle('no-scroll');
     })
 }

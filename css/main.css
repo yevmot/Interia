@@ -5,7 +5,7 @@
 
 @import url('burger.css');
 
-/* main {display: none;} footer {display: none;} */
+main {display: none;} footer {display: none;}
 body {
     font-family: "Kanit", "Nunito", sans-serif;
     font-weight: 400;
@@ -17,6 +17,9 @@ body {
 body a {
     color: #fff;
 }
+body.no-scroll {
+    overflow: hidden;
+  }
 .container {
     position: relative;
     margin: 0 auto;
