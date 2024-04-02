@@ -5,7 +5,9 @@
 
 @import url('burger.css');
 
-main {display: none;} footer {display: none;}
+/* main {display: none;}  */
+/* header {display: none;} */
+/* footer {display: none;} */
 body {
     font-family: "Kanit", "Nunito", sans-serif;
     font-weight: 400;
@@ -261,8 +263,8 @@ span {
 .divider-img {
     display: flex;
     justify-content: center;
-    max-height: 515px;
-    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 /*___________________________ BLOG ___________________________*/

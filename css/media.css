@@ -8,11 +8,95 @@
     .container {
         padding: 0 30px 0 30px;
     }
-
     .header__button {
         margin-left: 20px;
     }
-
+/* __________MAIN__________ */
+    .about__button {
+        margin-left: 40px;
+    }
+/* __________ about __________ */
+    .about{
+        margin: 50px 0 50px 0;
+    }
+    .about__description {
+        padding: 0 0 50px;
+    }
+    .about__description p {
+        max-width: none;
+    }
+    .about__learn {
+        display: block;
+    }
+    .learn__left {
+        display: flex;
+        justify-content: center;
+    }
+    .learn__right {
+        margin: 0;
+    }
+    .right__top {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .about__button {
+        align-self: center;
+        margin-left: 15px;
+    }
+    /* __________ TEAMS __________ */
+    .hire {
+        display: none;
+    }
+    .teams {
+        padding: 50px 0 50px
+    }
+    .teams .row {
+        display: grid;
+    }
+    .teams__description {
+        max-width: none;
+    }
+    .reviews {
+        margin-top: 50px;
+    }
+    .teams__learn {
+        margin: 0 auto;
+        padding-top: 240px;
+    }
+    .teams__logo {
+        justify-content: center;
+        column-gap: 10px;
+    }
+    .teams__logo img {
+        width: 23%;
+        height: auto;
+    }
+      /* __________ design __________ */
+      .design {
+        margin: 50px 0 50px;
+    }
+    .divider-img {
+        display: none;
+    }
+    /* __________ blog __________ */
+    .blog .row {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .info {
+        margin-top: 0;
+    }
+    .info .description {
+        margin: 0 0 10px;
+    }
+    .info .photo {
+        margin: 30px 0 0 0;
+    }
+    .subscribe .title {
+        margin-right: 15px;
+    }
 }
  
 /* Portrait tablets and small desktops */
@@ -62,13 +146,86 @@
 
     .header__content__right {
         width: 100%;
-    }
-}
+    }   
 
- 
+    .nav-media .description {
+        font-size: 14px;
+}
+    
+    
+    
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-
+    .learn__left {
+        justify-content:space-around;
+        align-items: center;
+    }
+    .learn__left img {
+        width: 47%;
+        height: auto;
+    }
+    .right__top {
+        justify-content: space-between;
+    }
+    .learn__right img {
+        width: 45%;
+        height: auto;
+    }
+    .button {
+        padding: 13px 10px;
+        font-size: 10px;
+    }
+    .virtues__title {
+        margin: 54px 50px 20px 10px;
+        font-size: 30px;
+    }
+    .virtues_description {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .teams__description {
+        max-width: 440px;
+    }
+    .teams__learn img {
+        width: 45%;
+        height: 45%;
+    }
+    .teams_button {
+        margin: 70px 35px 125px 0;
+    }
+    .teams__learn {
+        /* display: block; */
+        width: 440px;
+        height: 440px;
+    }
+    .design__info .title {
+        width: 165px;
+        font-size: 25px;
+        padding-right: 10px;
+    }
+    .design__info .description {
+        font-size: 14px;
+    }
+    .subscribe .title {
+        font-size: 14px;
+    }
+    .subscribe-form__input {
+        font-size: 10px;;
+    }
+    .nav-media {
+        margin-bottom: 80px;
+    }
+    .nav-media .description {
+        margin-left: 20px;
+        font-size: 10px;
+    }
+    .copyright {
+        font-size: 10px;
+    }
+    .terms-privacy a {
+        margin-left: 30px;
+        font-size: 10px;
+    }
 } 
  
 /* Landscape phones and smaller */
