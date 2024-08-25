@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', function() {
     const video = document.querySelector('.video');
     const clear = document.querySelector('.clear');
     const fade = document.querySelector('.fade');
-
+    console.log(play);
     const body = document.body;
 
     play.addEventListener('click', function () {
@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', function() {
         video.classList.toggle('open')
         clear.classList.toggle('open')
 
-        document.body.classList.toggle('no-scroll');
+        // document.body.classList.toggle('no-scroll');
     })
 
     clear.addEventListener('click', function () {
@@ -19,6 +19,6 @@ window.addEventListener('DOMContentLoaded', function() {
         video.classList.toggle('open')
         clear.classList.toggle('open')
 
-        document.body.classList.toggle('no-scroll');
+        // document.body.classList.toggle('no-scroll');
     })
 });
