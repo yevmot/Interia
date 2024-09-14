@@ -3,11 +3,13 @@
 @import url('header.css');
 @import url('footer.css');
 @import url('scroll-top.css');
+@import url('modal.css');
+@import url('video.css');
 
 /* @import url('burger.css'); */
 
-/* main {display: none;}  */
 /* header {display: none;} */
+/* main {display: none;}  */
 /* footer {display: none;} */
 html, body {
     font-family: "Kanit", "Nunito", sans-serif;
@@ -46,6 +48,11 @@ body.no-scroll {
 .button:hover {
     box-shadow: inset 0 0 25px #ffffff17;
 }
+
+.button:active {
+    box-shadow: inset 0 0 50px #ffffff2d;
+}
+
 .title {
     font-family: "Kanit";
     font-size: 40px;
@@ -60,6 +67,10 @@ span {
     font-size: 16px;
     letter-spacing: 7px;
     color: #6D7D7D;
+}
+
+input:focus {
+    outline: none;
 }
 
 /*______________________________ MAIN ______________________________*/
